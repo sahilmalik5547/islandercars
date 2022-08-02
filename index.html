@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Islander cars</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.scss">
+    <!-- bootstrap 4 cdn links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik&display=swap" rel="stylesheet">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ============data-aos============== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- slick carousel -->
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-md sticky-top container-fluid p-0 navbar-dark bg-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon text-black" style="font-size: 35px;">
+
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center pb-3" id="collapsibleNavbar">
+            <ul class="navbar-nav align-items-center p-3">
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">About us</a></li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">Services</a></li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">Testimonials</a></li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">Why us</a></li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item m-1"><a href="index.html" class="nav-link">Contact us</a></li>
+            </ul>
+            <button class=" btn bttn m-3">Book A CAR</button>
+        </div>
+    </nav>
+
+    <!-- main-banner -->
+    <section class="main-banner " id="top">
+        <video src="https://res.cloudinary.com/greatco/video/upload/v1648660864/carrental_j9cwot.mp4" autoplay loop
+            muted></video>
+        <div class="banner-content shadow-lg bg-light p-5" data-aos="fade-up">
+            <!-- <div class="float-right badg"><p class="m-0">
+               <b>SAVE 15%</b> if you prepay your booking</p></div> -->
+            <h3 class="hf">
+                Book A Car
+            </h3>
+            <form action="#" class="form form-row">
+                <div class="col-md-6 col-lg-4 py-3">
+                    <label for="1" class="form-control-label"><i class="fa-solid fa-car"></i> Select your Car
+                        type</label>
+                    <input type="text" class="form-control" placeholder="Select your Car Type">
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+
+                    <label for="2" class="form-control-label"><i class="fa-solid fa-location-dot"></i>Pick-up</label>
+                    <input type="text" class="form-control" placeholder="Select Your Pick-up Location">
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+                    <label for="3" class="form-control-label"><i class="fa-solid fa-location-dot"></i>Drop-of</label>
+                    <input type="text" class="form-control" placeholder=" Select Your Drop Location">
+                </div>
+                <div class="col-md-6 col-lg-4  py-3">
+                    <label for="3" class="form-control-label"><i class="fa-solid fa-calendar-days"></i>Pick-up</label>
+                    <input type="text" class="form-control" placeholder="Select Date and Time">
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+                    <label for="3" class="form-control-label"><i class="fa-solid fa-calendar-days"></i>Drop-of</label>
+                    <input type="text" class="form-control" placeholder="Select Date and Time">
+
+                </div>
+                <div class="col-md-6 col-lg-4 py-3 ">
+                    <button class="btn btn-block">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Quick & easy car Rental -->
+    <section class="container quick text-center" data-aos="fade-up">
+        <h4 class="hf">Plan your trip now</h4>
+        <h1 class="hf">Quick & easy car rental</h1>
+
+        <div class="row mx-auto justify-content-around">
+            <div class="col-md-3">
+                <img class="mx-auto" src="./image/q1.png" alt="photo">
+                <div class="text-center">
+                    <h4 class="hf">Select Car</h4>
+                    <p>To contribute to positive change and achieve our sustainability goals with many extraordinary
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./image/q2.png" alt="photo">
+                <div class="text-center">
+                    <h4 class="hf">Contact Us</h4>
+                    <p>To contribute to positive change and achieve our sustainability goals with many extraordinary
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./image/q3.png" alt="photo">
+                <div class="text-center">
+                    <h4 class="hf">Lets drive</h4>
+                    <p>To contribute to positive change and achieve our sustainability goals with many extraordinary
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- slider -->
+    <section class="itemslider container-fluid px-0 my-5">
+        <h4 class="hf text-center">Vehicle Models</h4>
+        <h1 class="hf text-center">The St. Lucia Cars</h1>
+        <p class="text-center text-black-50">Here at St. Lucia Car Rentals, we take great pride in offering a fleet <br>
+            of vehicles specifically designed to handle ST. LUCIA terrain</p>
+
+        <div class="slider-nav mb-5">
+            <div class="item text-center shadow-sm">
+                <p> Toyota Rush
+                </p>
+            </div>
+            <div class="item text-center shadow-sm">
+                <p> Toyota Passo
+                </p>
+            </div>
+            <div class="item text-center shadow-sm">
+                <p> Grand Vitara
+                </p>
+            </div>
+            <div class="item text-center shadow-sm">
+                <p> Suzuki SX4
+                </p>
+            </div>
+            <div class="item text-center shadow-sm">
+                <p> Suzuki Splash</p>
+            </div>
+        </div>
+        <div class="sld-img">
+            <div class="slider-for mt-5">
+                <div class="item">
+                    <div class="row ">
+                        <div class="col-lg-8">
+                            <img src="./image/car-1.png" alt="photo">
+                        </div>
+                        <div class="col-lg-4 car-details">
+                            <h1>$ 70.00</h1>
+                            <p>Rent per day</p>
+                            <hr>
+                            <p><i class="fa-solid fa-gear"></i>Transmission: Manual</p>
+                            <p><i class="fa-solid fa-car"></i>Drive: 4x4</p>
+                            <p><i class="fa-solid fa-door-open"></i>Doors: 4</p>
+                            <p><i class="fa-solid fa-music"></i>Multimedia: AM/FM Sterio / CD Player</p>
+                            <p><i class="fa-solid fa-fan"></i>Air-Condition: Yes</p>
+                            <p><i class="fa-solid fa-gears"></i>Mileage: Unlimited Mileage</p>
+                            <button class="btn" style="background-image: linear-gradient(to right,#f0561d,#ff6830,#f0561d);
+                            ">BOOK RIDE</button>
+                            <button class="btn btn-primary">KNOW MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <img src="./image/c2.png" alt="photo">
+                        </div>
+                        <div class="col-lg-4 car-details">
+                            <h1>$ 50.00</h1>
+                            <p>Rent per day</p>
+                            <hr>
+                            <p><i class="fa-solid fa-door-open"></i>Doors: 4</p>
+                            <p><i class="fa-solid fa-gear"></i>Transmission: Automatic</p>
+                            <p><i class="fa-solid fa-music"></i>Multimedia: AM/FM Sterio / CD Player</p>
+                            <p><i class="fa-solid fa-fan"></i>Air-Condition: Yes</p>
+                            <p><i class="fa-solid fa-gears"></i>Mileage: Unlimited Mileage</p>
+                            <button class="btn" style="background-image: linear-gradient(to right,#f0561d,#ff6830,#f0561d);
+                            ">BOOK RIDE</button>
+                            <button class="btn btn-primary">KNOW MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <img src="./image/vitara-1.png" alt="photo">
+                        </div>
+                        <div class="col-lg-4 car-details">
+                            <h1>$ 85.00</h1>
+                            <p>Rent per day</p>
+                            <hr>
+                            <p><i class="fa-solid fa-door-open"></i>Doors: 4</p>
+                            <p><i class="fa-solid fa-gear"></i>Transmission: Automatic/Manual</p>
+                            <p><i class="fa-solid fa-music"></i>Multimedia: AM/FM Sterio / CD Player</p>
+                            <p><i class="fa-solid fa-fan"></i>Air-Condition: Yes</p>
+                            <p><i class="fa-solid fa-gears"></i>Mileage: Unlimited Mileage</p>
+                            <button class="btn" style="background-image: linear-gradient(to right,#f0561d,#ff6830,#f0561d);
+                            ">BOOK RIDE</button>
+                            <button class="btn btn-primary">KNOW MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <img src="./image/s4.png" alt="photo">
+                        </div>
+                        <div class="col-lg-4 car-details">
+                            <h1>$ 60.40</h1>
+                            <p>Rent per day</p>
+                            <hr>
+                            <p><i class="fa-solid fa-door-open"></i>Doors: 4</p>
+                            <p><i class="fa-solid fa-gear"></i>Transmission: Automatic</p>
+                            <p><i class="fa-solid fa-music"></i>Multimedia: AM/FM Sterio / CD Player</p>
+                            <p><i class="fa-solid fa-fan"></i>Air-Condition: Yes</p>
+                            <p><i class="fa-solid fa-gears"></i>Mileage: Unlimited Mileage</p>
+                            <button class="btn" style="background-image: linear-gradient(to right,#f0561d,#ff6830,#f0561d);
+                            ">BOOK RIDE</button>
+                            <button class="btn btn-primary">KNOW MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <img src="./image/splash.png" alt="photo">
+                            </div>
+                            <div class="col-lg-4 car-details">
+                                <h1>$ 50.00</h1>
+                                <p>Rent per day</p>
+                                <hr>
+                                <p><i class="fa-solid fa-door-open"></i>Doors: 4</p>
+                                <p><i class="fa-solid fa-gear"></i>Transmission: Manual</p>
+                                <p><i class="fa-solid fa-music"></i>Multimedia: AM/FM Sterio / CD Player</p>
+                                <p><i class="fa-solid fa-fan"></i>Air-Condition: Yes</p>
+                                <p><i class="fa-solid fa-gears"></i>Mileage: Unlimited Mileage</p>
+                                <button class="btn" style="background-image: linear-gradient(to right,#f0561d,#ff6830,#f0561d);
+                                ">BOOK RIDE</button>
+                                <button class="btn btn-primary">KNOW MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav',
+                autoplay: true,
+                adaptiveHeight: true,
+
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+
+            });
+
+        </script>
+    </section>
+
+    <section class="about-sec container" data-aos="fade-up">
+        <div class="row mx-auto d-flex justify-content-around">
+            <div class="col-lg-5 py-3">
+                <img src="./image/abt.jpg" alt="photo">
+            </div>
+            <div class="col-lg-5 py-5">
+                <h4 class="hf">About Company</h4>
+                <h1 class="hf">assion for travel is the fuel that drives us and our company forward.</h1> <br>
+                <p class="text-black-50">At Islander St Lucia Car Rental, we pride ourselves on the quality of our
+                    customer service. We put you first, from your first inquiry to the minute you return your St Lucia
+                    vehicle rental to us. The reason for that is that we’re an independent company so there’s no
+                    faceless corporation dictating company policy. In fact, our policy is simple – to give you the best
+                    and most affordable car rental deal anywhere on St Lucia.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-sec container-fluid px-0" data-aos="fade-up">
+        <div class="row no-gutters">
+            <div class="col-5 bg-dark"></div>
+            <div class="col-7 con-img"></div>
+        </div>
+        <div class="contact-content">
+            <div class="row mx-auto justify-content-center">
+                <div class="col-sm-7 col-md-7 text-white py-3">
+                    <h1 class="hf">Get advice before renting.</h1>
+                    <h4 class="hf hide1">Top Airports. Local Suppliers. 24/7 Support.</h4>
+                </div>
+                <div class="col-sm-5 col-md-4 py-3 mx-auto">
+                    <button class="btn bttn btn-lg ">Contact Us
+                        <i class="fa-solid fa-badge-check"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="why-sec container px-0 py-5 my-5" data-aos="fade-up">
+        <div class="row mx-auto justify-content-around">
+            <div class="col-md-6 py-3">
+                <h4 class="hf">Why Choose Us</h4>
+                <h1 class="hf">Why Savviest Travelers Choose Our Car Hires in St. Lucia?</h1>
+                <p class="text-black-50">Much of our business is gained through repeat customers and through those who
+                    have heard about us from other satisfied clients. We take great pride in this fact and in being the
+                    St. Lucia car rental company of choice for everyone from vacationers to VIPs. But just why is it
+                    that so many people choose us over the competition?</p>
+                <button class="btn bttn btn-lg">Know More <i class="fa-solid fa-angle-right p-2"></i></button>
+            </div>
+            <div class="col-md-6 prop py-3">
+                <div class="row py-3">
+                    <div class="col-3 py-1 text-center"><i class="fa-solid fa-car-on "></i></div>
+                    <div class="col-9 py-1">
+                        <h4 class="hf">Flexibility</h4>
+                        <p class="text-black-50">While companies make it difficult or impossible to add numerous
+                            drivers, we make it simple- and often make it happen at no additional cost to you.</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-3 py-1 text-center"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+                    <div class="col-9 py-1">
+                        <h4 class="hf">Local, Personal Service</h4>
+                        <p class="text-black-50">We take pride in not being part of a faceless corporation. Instead, we
+                            are a local company staffed by people who have always called the island home.</p>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-3 py-1 text-center"><i class="fa-solid fa-sack-dollar"></i></div>
+                    <div class="col-9 py-1">
+                        <h4 class="hf">Affordability</h4>
+                        <p class="text-black-50">If you are looking for a cheap affordable rental but don't want to
+                            skimp on safety or quality, we are the place to turn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0 py-5 bg-light" data-aos="fade-up">
+        <div class="rev-con mx-auto">
+            <h4 class="hf text-center">Reviewed by People</h4>
+            <h1 class="hf text-center">Clients' Testimonials</h1>
+            <div class="swiper mySwiper pt-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide shadow-lg">
+                        <div class="card p-3">
+                            <div class="card-body">
+                                <h5 class="hf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                    provident adipisci blanditiis debitis ex est minima ea optio vero dicta! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Illum, ad?</h5> <br>
+                                <h6 class="hf">Kimberly Gracia</h6>
+                                <p>Bosten area</p>
+                                <span class="float-right"><i class="fa-solid fa-quote-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shadow-lg">
+                        <div class="card p-3">
+                            <div class="card-body">
+                                <h5 class="hf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                    provident adipisci blanditiis debitis ex est minima ea optio vero dicta! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Illum, ad?</h5> <br>
+                                <h6 class="hf">Kimberly Gracia</h6>
+                                <p>Bosten area</p>
+                                <span class="float-right"><i class="fa-solid fa-quote-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide shadow-lg">
+                        <div class="card p-3">
+                            <div class="card-body">
+                                <h5 class="hf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                    provident adipisci blanditiis debitis ex est minima ea optio vero dicta! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Illum, ad?</h5> <br>
+                                <h6 class="hf">Kimberly Gracia</h6>
+                                <p>Bosten area</p>
+                                <span class="float-right"><i class="fa-solid fa-quote-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    freeMode: false,
+                    loop: true,
+                    autoPlay: true,
+                    breakpoints: {
+                        '767': {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <footer class="container py-5" data-aos="fade-up">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 py-3">
+                <h4 class="hf">ABOUT US</h4> <br>
+                <p class="text-black-50">At Islander St Lucia Car Rental, we pride ourselves on the quality of our
+                    customer service. We put you first, from your first inquiry to the minute you return your St Lucia
+                    vehicle rental to us.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 py-3">
+                <h4 class="hf">QUICK LINKS</h4> <br>
+                <ul class="foot-navi">
+                    <li class="my-2"> <a href="#">Home</a></li>
+                    <li class="my-2"> <a href="#">About us</a></li>
+                    <li class="my-2"> <a href="#">Reviews</a></li>
+                    <li class="my-2"> <a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 foot-contact py-3">
+                <h4 class="hf">CONTACT INFO</h4> <br>
+                <p class="text-black-50"><i class="fa-solid fa-phone"></i>+91 9100007730</p>
+                <p class="text-black-50"><i class="fa-solid fa-phone"></i>+91 9100007731</p>
+                <p class="text-black-50"><i class="fa-solid fa-envelope"></i>support@vortexdigitalworld.com</p>
+                <p class="text-black-50"><i class="fa-solid fa-location-dot"></i> st. Lucia Airports</p>
+            </div>
+            <div class="col-lg-3 col-md-6 py-3">
+                <h4 class="hf">SUBSCRIPTION</h4> <br>
+                <p class="text-black-50">Subscribe your Email address for latest news & updates.</p>
+                <input type="text" class="form-control" placeholder="Enter Your Email Address"> <br>
+                <button class="btn bttn">Submit</button>
+            </div>
+        </div>
+
+    </footer>
+    <!-- fixed -->
+    <a href="#top" class="up"><i class="fa-solid fa-angle-up"></i> </a>
+
+    <!-- data Aos -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

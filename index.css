@@ -1,0 +1,304 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.hf {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.bttn {
+    background-image: linear-gradient(to right, #f0561d, #ff6830, #fff, #f0561d);
+    color: #fff !important;
+    background-size: 300% 100%;
+    transition: all 0.5s ease-in-out reverse;
+}
+
+.bttn:hover {
+    background-image: linear-gradient(to right, #f0561d, #fff, #ff6830, #f0561d);
+    color: #fff !important;
+    background-position: 100% 0;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.main-banner video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.main-banner .banner-content i {
+    color: #f0561d;
+    padding-right: 10px;
+}
+
+.main-banner .banner-content button {
+    background-image: linear-gradient(to right, #f0561d, #ff6830);
+    margin-top: 32px;
+}
+
+.quick {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.quick img {
+    object-fit: cover;
+    height: 50%;
+    width: 50%;
+}
+
+.quick img:hover {
+    animation: shake 1s ease-in-out;
+
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+
+
+}
+
+.itemslider .sld-img {
+    background-image: url(./image/home4-car-tab-bg.png);
+    background-repeat: no-repeat;
+}
+
+
+.slider-for {
+    width: 75%;
+    height: 70vh;
+    margin: 30px auto 1px;
+    cursor: pointer;
+}
+
+.slider-for img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+.slider-nav {
+    width: 80%;
+    height: 85px;
+    margin: auto;
+}
+
+.slider-nav .slick-track {
+    height: 50px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 35%;
+    z-index: 50;
+    margin-top: -12px;
+    background-image: linear-gradient(to right, #f0561d, #ff6830, #f0561d);
+    border: unset;
+    color: #fff;
+    padding: 7px;
+}
+
+.slick-prev {
+    left: 0;
+    width: 75px;
+
+}
+
+.slick-next {
+    right: 0;
+    width: 75px;
+}
+
+.slider-for .car-details button {
+    width: 45%;
+    color: #fff;
+}
+
+.slider-for .car-details p i {
+    padding-right: 10px;
+}
+
+.itemslider .slider-nav .item {
+    margin: 10px;
+    font-size: 18px;
+
+}
+
+.itemslider .slider-nav .item:focus {
+    background-image: linear-gradient(to right, #f0561d, #ff6830, #f0561d);
+    color: #fff;
+}
+
+.about-sec {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.about-sec img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-sec {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contact-sec .contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.contact-sec .con-img {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(./image/cta_car_action.png);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.why-sec .prop i {
+    color: #f0561d;
+    background-color: hsla(16, 100%, 59%, 0.2);
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 40px;
+    transition: transform 0.5s;
+}
+
+.why-sec .prop i:hover {
+    transform: rotateY(180deg);
+}
+
+.rev-con {
+    width: 75%;
+    cursor: pointer;
+}
+
+.rev-con .card-body i {
+    font-size: 35px;
+    color: #f0561d;
+}
+
+.rev-con .card {
+    border: unset;
+}
+footer .foot-navi{
+    padding: 0px;
+}
+footer .foot-navi li {
+    list-style-type: none;
+
+}
+
+footer .foot-navi li a {
+    color: grey;
+}
+
+footer .foot-navi li a:hover {
+    color: #ff6830;
+    text-decoration: none;
+}
+
+footer .foot-contact p:hover {
+    color: #ff6830 !important;
+}
+
+footer .foot-contact p i{
+    padding-right: 10px;
+}
+.up{
+    position: fixed;
+    bottom: 5px;
+    right:10px;
+    padding: 10px;
+    background-color: #ff6830;
+    color: #fff;
+}
+.up:hover {
+    text-decoration: none;
+    color: #fff !important;
+}
+/* media query */
+@media screen and (max-width:767px) {
+    .banner-content{
+        position: static;
+    }
+    .main-banner {
+        position: static;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        top: -96px;
+    }
+    
+    
+}
+@media screen and (min-width:767px) {
+    .main-banner .banner-content {
+        position: absolute;
+        top: 80%;
+        left: 15%;
+        width: 75%;
+    }
+    .main-banner {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        top: -96px;
+    }
+    
+    
+    
+}
+
+@media screen and (min-width:992px) {
+    .quick {
+        margin-top: 10rem;
+    }        
+}
+
+@media screen and (max-width:992px), (min-width:767px) {
+    .quick {
+        margin-top: 13rem;
+        padding-bottom:25px ;
+    }    
+}
+
+
+@media screen and (max-width:567px) {
+    .hide1{
+        display: none;
+    }
+    
+}
+
